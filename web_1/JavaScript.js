@@ -170,7 +170,6 @@
                 content.style.display = 'none'; // Ẩn các phần tử ngoài phạm vi
             }
         });
-
     }
     // Thêm sự kiện cho Button "Next"
     button8.addEventListener('click', () => {
@@ -198,6 +197,7 @@
         }
         console.log("Nhan <")
     });
+
     // Gọi hàm cập nhật hiển thị lần đầu
     updateVisibility3();
 });

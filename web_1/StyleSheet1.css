@@ -17,24 +17,29 @@
 
 /*-------Một hàng 4 cột----------*/
 .row1column4 {
-    grid-column: 1/14;
+    grid-column: 1/15;
     display: grid;
-    grid-template-columns: repeat(14, minmax(0, 1fr))
+    grid-template-columns: repeat(14, minmax(0px, 1fr));
+    column-gap: 20px;
 }
 .row1column4-1 {
     grid-column: 2/5;
+    overflow: hidden;
 
 }
 .row1column4-2 {
     grid-column: 5/8;
+    overflow: hidden;
 
 }
 .row1column4-3 {
     grid-column: 8/11;
+    overflow: hidden;
 
 }
 .row1column4-4 {
     grid-column: 11/14;
+    overflow: hidden;
 
 }
 
@@ -43,7 +48,7 @@
     grid-column: 1/14;
     display: grid;
     grid-template-columns: repeat(14, minmax(0, 1fr));
-    
+    column-gap: 10px;
 }
 
 .row1column3-1 {
@@ -81,7 +86,7 @@
 .tao1hang14cot {
     grid-column: 1/15;
     display: grid;
-    grid-template-columns: repeat(14, minmax(0, 1fr))
+    grid-template-columns: repeat(14, minmax(0, 1fr));
 }
 
 p{
@@ -116,7 +121,7 @@ hr {
 .progress1 {
     width: 60%; /* Tỉ lệ tiến trình (60% trong ví dụ này) */
 }
-..progress2 {
+.progress2 {
     width: 70%; /* Tỉ lệ tiến trình (60% trong ví dụ này) */
 }
 .progress3 {
@@ -298,6 +303,7 @@ new-arrival-2-4-1{
 .img-main-page {
     grid-column: 1/13;
     grid-row: 3;
+    overflow: hidden;
 }
 .imgmainpage img {
     width: 100%;
@@ -398,8 +404,13 @@ new-arrival-2-4-1{
     grid-row: 6;
     display: grid;
 }
-.row1col2-dis-tra{
-    display:grid;
+.distra1{
+    min-height: 150px;
+    max-height: auto;
+}
+
+.row1col2-dis-tra {
+    display: grid;
     grid-template-columns: aotu auto;
     grid-template-rows: auto aotu;
 }
@@ -407,22 +418,26 @@ new-arrival-2-4-1{
     grid-column: 1/2;
     justify-self: center;
     align-content: center;
+    align-items: center;
     border-radius: 10px;
     overflow: hidden;
     background-color: white;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    
     box-shadow: 5px 5px 10px gray;
+
 }
 .row1col2-dis-tra-1 img {
     /*flex: 0 0 auto; *//* Thẻ 2 chiếm toàn bộ không gian còn lại */
-    width: 80px;
-    height: 80px;
+    padding: 2px;
 }
 .row1col2-dis-tra-1-1 {
     width: 5px;
     background-color: #1a73e8;
+    padding: 2px;
+    height: 100%;
 }
 .row1col2-dis-tra-1-2 {
     width: 2px;
@@ -440,6 +455,7 @@ new-arrival-2-4-1{
     overflow: hidden;
     background-color: white;
     box-shadow: 5px 5px 10px gray;
+    max-width: 100%;
 }
 .row1col2-dis-tra-2-1{
     grid-row: 1;
@@ -478,6 +494,7 @@ new-arrival-2-4-1{
     grid-template-rows: auto auto;
     padding: 10px;
     border-radius: 10px;
+    width:100%;
 }
 .row1col2-dis-tra-2-2-1 {
     grid-row: 1;
@@ -511,7 +528,8 @@ new-arrival-2-4-1{
     width: 70px;
 }
 .dis-transport-1 {
-    padding: 10px;    
+    padding: 10px;  
+    height: 100%;
 }
 
 /*--------------------New-Arrival------------------------*/
@@ -543,27 +561,32 @@ new-arrival-2-4-1{
 }
 .new-arrival-2-2{
     position: relative;
-    width: 480px;
-    height: 480px;
+    width: auto;
+    height: auto;
 }
-.new-arrival-2-2 img{
+.new-arrival-2-2 #img-2, #img-3{
+    width: 100%;
+    min-width: 240px;
+    max-width: 450px;
+    height: auto;
+}
+/*.new-arrival-2-2 img {
     position: absolute;
     top: 0;
     height: 100%;
     object-fit: cover;
-}
+}*/
 #img-1 {
     position: absolute;
     right: 0;
     z-index: 6;
-    top: 0;
     left: 0;
     width: auto;
-    height: 480px;
+    height: auto;
 }
 #img-4 {
     position: absolute;
-    top: 450px;
+    top: 90%;
     width: 10%;
     height: auto;
     z-index: 6;
@@ -585,7 +608,7 @@ new-arrival-2-4-1{
 }
 .new-arrival-2-2-1 {
     position: absolute;
-    top: 430px;
+    top: 90%;
     display: none;
     right: 45%;
 }
@@ -659,6 +682,9 @@ new-arrival-2-4-1{
     display: grid;
     grid-template-columns: inherit;
     grid-template-rows: auto auto 1fr 1fr auto;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(110px, 1fr);
+    overflow-x: auto;
 }
 .sale-product-new1{
     grid-column:1/15;   
@@ -782,6 +808,7 @@ new-arrival-2-4-1{
 .img-activelife {
     grid-column: 1/13;
     grid-row: 9;
+    column-gap: 10px;
 }
 .imgactivelifenew1{
     grid-column: 2/14;
@@ -844,6 +871,11 @@ width: 100%;
 }*/
 .img-activelife-new1-2 {
     display: none;
+}
+.imgactivelife{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 /*---------------bst-activelife--------------------*/
 .bst-activelife {
@@ -914,6 +946,7 @@ width: 100%;
 .accessory {
     grid-column: 1/13;
     grid-row: 13;
+    display: grid;
 }
 /*----------------------img-chose-best--------------------------*/
 .img-chose-best {
@@ -1024,12 +1057,15 @@ width: 100%;
     font-size: 110px; 
 }
 .imgtalkaboutwe2 {
-    width: 473px;
-    height: 688px;
+    width: 100%;
+    height: auto;
     background-color: #4b6ef5;
     position: relative;
 }
-
+.imgtalkaboutwe2new{
+    width: 70% !important;
+    height: auto;
+}
 .imgtalkaboutwe1-2 {
     position: absolute;
     top: 5%;
@@ -1062,6 +1098,7 @@ width: 100%;
     justify-items: center;
     align-content: center;
     font-size: 25px;
+    padding: 10%;
 }
 .golden-stars i {
     color: gold;
@@ -1071,6 +1108,10 @@ width: 100%;
 /*------------ABOUT-WE------------*/
 .about-we-new1 {
     grid-column: 2/8;
+}
+.about-we-new1 img {
+    width: 100%;
+    height: auto;
 }
 .about-we-new2{
     grid-column: 8/14;
@@ -1108,6 +1149,7 @@ width: 100%;
     grid-column: 1/13;
     grid-row: 18;
     display: grid;
+    grid-template-columns: inherit
 }
 .img-technology-1{
     grid-column: 2/8;
@@ -1276,4 +1318,35 @@ width: 100%;
 .footer-4 * {
     margin: 5px;
     padding: 5px;
+}
+
+.taoreponsivekhongxuongdong {
+    display: grid;
+    grid-auto-flow: column !important;
+    grid-auto-columns: minmax(110px, 1fr) !important;
+}
+.taoreponsivekhongxuongdong1 {
+    display: grid;
+    grid-auto-flow: column !important;
+    grid-auto-columns: minmax(210px, 1fr) !important;
+}
+img {
+    max-width: 100% !important;
+/*    height: auto !important;*/
+    object-fit: cover !important;
+}
+@media (max-width: 900px){
+/*    .sale-product-new3 {
+        display: flex;
+        justify-content: space-between;
+        flex-flow:column nowrap;
+    }
+    .sale-product-new4 {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column nowrap;
+    }
+    .new-arrival-2{
+        flex: 1;
+    }*/
 }
