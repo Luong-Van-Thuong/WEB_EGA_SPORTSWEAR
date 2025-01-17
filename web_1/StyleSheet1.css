@@ -140,7 +140,7 @@ new-arrival-2-4-1{
     grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 10px;
     font-family: 'Mulish', sans-serif;
-    font-size: 16px;
+    font-size: 13px;
     row-gap: 30px;
 }
 
@@ -189,8 +189,9 @@ new-arrival-2-4-1{
 }
 /*---------------------------------------------------------------*/
 .nav-bar {
-    display: grid;
     grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-row: 2;
     top:0;
     position:sticky;
@@ -564,9 +565,8 @@ new-arrival-2-4-1{
     width: auto;
     height: auto;
 }
-.new-arrival-2-2 #img-2, #img-3{
+.new-arrival-2-2 #img-2 #img-3{
     width: 100%;
-    min-width: 240px;
     max-width: 450px;
     height: auto;
 }
@@ -1044,8 +1044,8 @@ width: 100%;
     font-size: 32px;
 }
 .circle1 {
-    width: 110px;
-    height: 150px;
+    width: auto;
+    height: auto;
     background-color: #4b6ef5;
     display: flex;
     justify-content: center;
@@ -1063,7 +1063,7 @@ width: 100%;
     position: relative;
 }
 .imgtalkaboutwe2new{
-    width: 70% !important;
+    width: 50% !important;
     height: auto;
 }
 .imgtalkaboutwe1-2 {
@@ -1349,4 +1349,83 @@ img {
     .new-arrival-2{
         flex: 1;
     }*/
+}
+
+/*Tạo responsive cho web*/
+/*Ẩn toàn bộ menu*/
+@media screen and (max-width: 950px){
+    .nav-bar-menu-1,
+    .nav-bar-menu-2,
+    .nav-bar-menu-3,
+    .nav-bar-menu-4,
+    .nav-bar-menu-5,
+    .nav-bar-menu-6,
+    .nav-bar-menu-7,
+    .nav-bar-menu-8, 
+    .nav-bar-menu-9{
+        display: none;
+    }
+    .nav-bar{
+        display: flex;
+        column-gap: 10px;
+        
+    }
+    .nav-bar-menu-11 {
+        display: block;
+        order: 1;
+        flex: 1;
+        align-content: center;
+    }
+    .nav-bar-img {
+        order: 2;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-bar-menu-10 {
+        order: 3;
+        flex: 1;
+        justify-content: flex-end;
+    }
+    #dang-nhap{
+        display: none;
+    }
+}
+/*Hiển thị 4 menu*/
+@media screen and (min-width: 951px) and (max-width: 1149px) {
+    .nav-bar-menu-5,
+    .nav-bar-menu-6,
+    .nav-bar-menu-7,
+    .nav-bar-menu-8 {
+        display: none;
+    }
+}
+/*Hiển thị 5 menu*/
+@media screen and (min-width: 1150px) and (max-width: 1200px) {
+    .nav-bar-menu-6,
+    .nav-bar-menu-7,
+    .nav-bar-menu-8 {
+        display: none;
+    }
+}
+/*Hiển thị 6 menu*/
+@media screen and (min-width: 1201px) and (max-width: 1790px) {
+    .nav-bar-menu-7,
+    .nav-bar-menu-8 {
+        display: none;
+    }
+}
+/*Hiển thị toàn bộ menu*/
+@media screen and (min-width: 1791px){
+    .nav-bar-menu-1,
+    .nav-bar-menu-2,
+    .nav-bar-menu-3,
+    .nav-bar-menu-4,
+    .nav-bar-menu-5,
+    .nav-bar-menu-6,
+    .nav-bar-menu-7,
+    .nav-bar-menu-8{
+        display: block;
+    }
+
 }
