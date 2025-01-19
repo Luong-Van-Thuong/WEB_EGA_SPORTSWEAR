@@ -326,6 +326,10 @@ new-arrival-2-4-1{
     justify-content: center;
     align-content: center;
 }
+button{
+    width: 100%;
+    height: 100%;
+}
 .buttonimgmainpage2 {
     position: absolute;
     background-color: grey;
@@ -398,6 +402,10 @@ new-arrival-2-4-1{
 .product-top-new2 {
     margin: 10px;
     background-color: #CCCCCC;
+}
+.producttopnew{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 /*---------------Dis-Transport-----------------------------*/
 .dis-transport {
@@ -539,11 +547,17 @@ new-arrival-2-4-1{
     grid-row: 7;
     display: grid;
     padding-bottom: 100px;
+    position: relative;
 }
-.new-arrival-1{
+.new-arrival-2{
+    grid-row: 2;
+}
+.new-arrival-1 {
     grid-column: 2/15;
-    display:grid;
+    grid-row: 1;
+    display: grid;
     grid-template-columns: inherit;
+    position: relative;
 }
 .new-arrival-1-1{
     grid-column: 1/4;
@@ -642,18 +656,16 @@ new-arrival-2-4-1{
 .new-arrival-2-3-1{
     display: flex;
 }
-.new-arrival-2-3-1-1{
+.new-arrival-2-3-1-1 {
     border-radius: 50%;
     justify-content: center;
     align-content: center;
-    
-}
-.new-arrival-2-3-1-1 {
-    border-radius: 50%;
-    padding-right: 15px;
+    margin-right: 20px;
+    min-height: 15px !important;
+    min-width: 15px !important;
 }
 
-#so-khac{
+#so-khac {
     text-align: center;
     font-size: 25px;
     color: gray;
@@ -876,6 +888,9 @@ width: 100%;
     max-width: 100%;
     height: auto;
     object-fit: cover;
+}
+.img-accessory-new1{
+    grid-column: 1/-1;
 }
 /*---------------bst-activelife--------------------*/
 .bst-activelife {
@@ -1335,8 +1350,13 @@ img {
 /*    height: auto !important;*/
     object-fit: cover !important;
 }
-@media (max-width: 900px){
-/*    .sale-product-new3 {
+input {
+    width: 90%;
+    border-radius: 20px;
+    padding-right: 10px;
+}
+@media (max-width: 900px) {
+    /*    .sale-product-new3 {
         display: flex;
         justify-content: space-between;
         flex-flow:column nowrap;
@@ -1353,16 +1373,68 @@ img {
 
 /*Tạo responsive cho web*/
 /*Ẩn toàn bộ menu*/
-@media screen and (max-width: 950px){
-    .nav-bar-menu-1,
-    .nav-bar-menu-2,
-    .nav-bar-menu-3,
-    .nav-bar-menu-4,
-    .nav-bar-menu-5,
-    .nav-bar-menu-6,
-    .nav-bar-menu-7,
-    .nav-bar-menu-8, 
-    .nav-bar-menu-9{
+.nav-bar-menu_responsive{
+    position: absolute;
+    display: none;
+}
+.nav-bar-menu_responsive *{
+    padding-inline: 5px;
+}
+.dangnhapresponsive {
+    display: grid;
+    grid-template-columns: auto auto;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+.dangnhapresponsive2 p{
+    padding: 10px;
+}
+.nav-bar-menu-1_responsive,
+.nav-bar-menu-2_responsive,
+.nav-bar-menu-3_responsive,
+.nav-bar-menu-4_responsive,
+.nav-bar-menu-5_responsive,
+.nav-bar-menu-6_responsive,
+.nav-bar-menu-7_responsive,
+nav-bar-menu-8_responsive {
+    padding: 10px;
+    background-color: white;
+}
+.choxuong1,
+.choxuong2,
+.choxuong3,
+.choxuong4{
+    cursor:pointer;
+}
+.navbarmenu1 p {
+    padding: 10px;
+}
+.bosutap p{
+    padding: 10px;
+}
+.phukien1 p{
+    padding:10px;
+}
+.open_menu
+ {
+    cursor: pointer;
+}
+.navbarmenu_responsive,
+.bosutap_responsive,
+.phukien_responsive,
+.xuhuong_responsive {
+    display: none;
+}
+
+/*.dangnhapresponsive *{
+    padding-inline: 10px;
+}
+.navbarmenu1 *{
+padding-inline: 5px;
+}*/
+@media screen and (max-width: 950px) {
+    .nav-bar-menu-1, .nav-bar-menu-2, .nav-bar-menu-3, .nav-bar-menu-4, .nav-bar-menu-5, .nav-bar-menu-6, .nav-bar-menu-7, .nav-bar-menu-8, .nav-bar-menu-9{
         display: none;
     }
     .nav-bar{
@@ -1389,6 +1461,116 @@ img {
     }
     #dang-nhap{
         display: none;
+    }
+    .transport-new-1 {
+        grid-template-rows: auto auto;
+    }
+    .transportnew1ofresponsive{
+        grid-column: 2/8;      
+    }
+    .transportnew2ofresponsive{
+        grid-column: 8/14;
+    }
+    .transportnew3ofresponsive {
+        grid-column: 2/8;
+    }
+
+    .transportnew4ofresponsive {
+        grid-column: 8/14;
+
+    }
+    .taohieuungkhongxuongdong {       
+        grid-auto-flow: column;
+        grid-auto-columns: 270px;
+    }
+    .taohieuungkhongxuongdong2 {
+        display: flex;
+    }
+    .dis-transport {
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(350px, 1fr);
+    }
+    .dis-transport-new1 {
+        display: flex;
+    }
+    .new-arrival-1{
+        grid-row: 1;
+        grid-column: 1/-1;
+    }
+    .new-arrival-2{
+        grid-row: 2;
+    }
+    .new-arrival-new1 .row1column4-1,
+    .new-arrival-new1 .row1column4-2,
+    .new-arrival-new1 .row1column4-3,
+    .new-arrival-new1 .row1column4-4,
+    .sale-product-new3 .row1column4-1,
+    .sale-product-new3 .row1column4-2,
+    .sale-product-new3 .row1column4-3,
+    .sale-product-new3 .row1column4-4,
+    .sale-product-new4 .row1column4-1,
+    .sale-product-new4 .row1column4-2,
+    .sale-product-new4 .row1column4-3,
+    .sale-product-new4 .row1column4-4,
+    .bst-activelife-new2 .row1column4-1,
+    .bst-activelife-new2 .row1column4-2,
+    .bst-activelife-new2 .row1column4-3,
+    .bst-activelife-new2 .row1column4-4,
+    .accessory-new2 .row1column4-1,
+    .accessory-new2 .row1column4-2,
+    .accessory-new2 .row1column4-3,
+    .accessory-new2 .row1column4-4,
+    .bestsellers-new2 .row1column4-1,
+    .bestsellers-new2 .row1column4-2,
+    .bestsellers-new2 .row1column4-3,
+    .bestsellers-new2 .row1column4-4,
+    .video-view-top-new2 .row1column4-1,
+    .video-view-top-new2 .row1column4-2,
+    .video-view-top-new2 .row1column4-3,
+    .video-view-top-new2 .row1column4-4,
+    .advice-new2 .row1column4-1,
+    .advice-new2 .row1column4-2,
+    .advice-new2 .row1column4-3,
+    .advice-new2 .row1column4-4    {
+        grid-column: unset;
+    }
+    .new-arrival-new1,
+    .sale-product-new3,
+    .sale-product-new4,
+    .bst-activelife-new2,
+    .accessory-new2,
+    .bestsellers-new2,
+    .video-view-top-new2,
+    .advice-new2{
+        grid-template-columns: repeat(4, 270px);
+        overflow-x: auto;
+    }
+
+    .follow-instagram-new2-2 {
+        grid-column: 1/-1;
+        grid-template-columns: repeat(5, 300px);
+        overflow-x: auto;
+    }
+    .follow-instagram-1,
+    .follow-instagram-2,
+    .follow-instagram-3,
+    .follow-instagram-4,
+    .follow-instagram-5 {
+        grid-column: unset;
+    }
+    .list-product-new2 {        
+        grid-template-columns: repeat(4, 470px);
+        overflow-x: auto;
+        /*justify-items: center;*/
+    }
+    .list-product-new2 .row1column4-1,
+    .list-product-new2 .row1column4-2,
+    .list-product-new2 .row1column4-3,
+    .list-product-new2 .row1column4-4 {
+        grid-column: unset;
+    }
+    .footer .row1column4 {
+        display: unset;
     }
 }
 /*Hiển thị 4 menu*/

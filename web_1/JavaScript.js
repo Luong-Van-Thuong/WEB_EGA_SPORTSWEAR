@@ -200,6 +200,65 @@
 
     // Gọi hàm cập nhật hiển thị lần đầu
     updateVisibility3();
+    
+    const openmenu = document.querySelector('.open_menu');
+    const navbarmenuresponsive = document.querySelector('.nav-bar-menu_responsive');
+    const navbarmenu = document.querySelector('.navbarmenu_responsive');
+    const bosutap = document.querySelector('.bosutap_responsive');
+    const phukien = document.querySelector('.phukien_responsive');
+    const xuhuong = document.querySelector('.xuhuong_responsive');
+    const navbarmenu1resposive = document.querySelector('.choxuong1');
+    const navbarmenu2resposive = document.querySelector('.choxuong2');
+    const navbarmenu3resposive = document.querySelector('.choxuong3');
+    const navbarmenu4resposive = document.querySelector('.choxuong4');
+    let co1 = false, co2 = false, co3 = false, co4 = false;
+    if (openmenu && navbarmenuresponsive) {
+        openmenu.addEventListener('click', () => {
+            navbarmenuresponsive.style.display = 'grid';
+            console.log("Xin chào Thương");
+        });
+    } else {
+        console.error("Không tìm thấy phần tử .open_menu hoặc .nav-bar-menu_responsive");
+    }
+    navbarmenu1resposive.addEventListener('click', () => {
+        if (co1 == false) {
+            navbarmenu.style.display = 'flex';
+            co1 = true;
+        } else {
+            navbarmenu.style.display = 'none';
+             co1 = false;
+        }
+        
+    })
+    navbarmenu2resposive.addEventListener('click', () => {
+        if (co2 == false) {
+            bosutap.style.display = 'flex';
+            co2 = true;
+            console.log("Bat")
+        } else {
+            bosutap.style.display = 'none';
+            console.log("Tat")
+            co2 = false;
+        }
+    })
+    navbarmenu3resposive.addEventListener('click', () => {
+        if (co3 == false) {
+            phukien.style.display = 'flex';
+            co3 = true;
+        } else {
+            phukien.style.display = 'none';
+            co3 = false;
+        }
+    })
+    navbarmenu4resposive.addEventListener('click', () => {
+        if (co4 == false) {
+            xuhuong.style.display = 'flex';
+            co4 = true;
+        } else {
+            xuhuong.style.display = 'none';
+            co4 = false;
+        }
+    })
 });
 
 
