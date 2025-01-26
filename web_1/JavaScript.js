@@ -1,18 +1,18 @@
 ﻿document.addEventListener('DOMContentLoaded', function () {
-//    function updateClock() {
-//        const now = new Date();
-//        const hours = String(now.getHours()).padStart(2, '0');
-//        const minutes = String(now.getMinutes()).padStart(2, '0');
-//        const seconds = String(now.getSeconds()).padStart(2, '0');
+    function updateClock() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
 
-//        document.getElementById('gio').textContent = hours;
-//        document.getElementById('phut').textContent = minutes;
-//        document.getElementById('giay').textContent = seconds;
-//        console.log(hours, minutes, seconds)
-//    }
+        document.getElementById('gio').textContent = hours;
+        document.getElementById('phut').textContent = minutes;
+        document.getElementById('giay').textContent = seconds;
+        console.log(hours, minutes, seconds)
+    }
 
-//    setInterval(updateClock, 1000);
-    //    updateClock();
+    setInterval(updateClock, 1000);
+        updateClock();
 
     const contents = document.querySelectorAll('.imgactivelife');
     const button2 = document.querySelector('.imgactivelife1Button');
@@ -201,64 +201,131 @@
     // Gọi hàm cập nhật hiển thị lần đầu
     updateVisibility3();
     
-    const openmenu = document.querySelector('.open_menu');
-    const navbarmenuresponsive = document.querySelector('.nav-bar-menu_responsive');
-    const navbarmenu = document.querySelector('.navbarmenu_responsive');
-    const bosutap = document.querySelector('.bosutap_responsive');
-    const phukien = document.querySelector('.phukien_responsive');
-    const xuhuong = document.querySelector('.xuhuong_responsive');
-    const navbarmenu1resposive = document.querySelector('.choxuong1');
-    const navbarmenu2resposive = document.querySelector('.choxuong2');
-    const navbarmenu3resposive = document.querySelector('.choxuong3');
-    const navbarmenu4resposive = document.querySelector('.choxuong4');
-    let co1 = false, co2 = false, co3 = false, co4 = false;
-    if (openmenu && navbarmenuresponsive) {
-        openmenu.addEventListener('click', () => {
-            navbarmenuresponsive.style.display = 'grid';
-            console.log("Xin chào Thương");
-        });
-    } else {
-        console.error("Không tìm thấy phần tử .open_menu hoặc .nav-bar-menu_responsive");
-    }
-    navbarmenu1resposive.addEventListener('click', () => {
-        if (co1 == false) {
-            navbarmenu.style.display = 'flex';
-            co1 = true;
-        } else {
-            navbarmenu.style.display = 'none';
-             co1 = false;
-        }
+    //const openmenu = document.querySelector('.open_menu');
+    //const navbarmenuresponsive = document.querySelector('.nav-bar-menu_responsive');
+    //const navbarmenu = document.querySelector('.navbarmenu_responsive');
+    //const bosutap = document.querySelector('.bosutap_responsive');
+    //const phukien = document.querySelector('.phukien_responsive');
+    //const xuhuong = document.querySelector('.xuhuong_responsive');
+    //const navbarmenu1resposive = document.querySelector('.choxuong1');
+    //const navbarmenu2resposive = document.querySelector('.choxuong2');
+    //const navbarmenu3resposive = document.querySelector('.choxuong3');
+    //const navbarmenu4resposive = document.querySelector('.choxuong4');
+    //let co1 = false, co2 = false, co3 = false, co4 = false;
+    //if (openmenu && navbarmenuresponsive) {
+    //    openmenu.addEventListener('click', () => {
+    //        navbarmenuresponsive.style.display = 'grid';
+    //        console.log("Xin chào Thương");
+    //    });
+    //} else {
+    //    console.error("Không tìm thấy phần tử .open_menu hoặc .nav-bar-menu_responsive");
+    //}
+    //navbarmenu1resposive.addEventListener('click', () => {
+    //    if (co1 == false) {
+    //        navbarmenu.style.display = 'flex';
+    //        co1 = true;
+    //    } else {
+    //        navbarmenu.style.display = 'none';
+    //         co1 = false;
+    //    }
         
-    })
-    navbarmenu2resposive.addEventListener('click', () => {
-        if (co2 == false) {
-            bosutap.style.display = 'flex';
-            co2 = true;
-            console.log("Bat")
-        } else {
-            bosutap.style.display = 'none';
-            console.log("Tat")
-            co2 = false;
-        }
-    })
-    navbarmenu3resposive.addEventListener('click', () => {
-        if (co3 == false) {
-            phukien.style.display = 'flex';
-            co3 = true;
-        } else {
-            phukien.style.display = 'none';
-            co3 = false;
-        }
-    })
-    navbarmenu4resposive.addEventListener('click', () => {
-        if (co4 == false) {
-            xuhuong.style.display = 'flex';
-            co4 = true;
-        } else {
-            xuhuong.style.display = 'none';
-            co4 = false;
-        }
-    })
+    //})
+    //navbarmenu2resposive.addEventListener('click', () => {
+    //    if (co2 == false) {
+    //        bosutap.style.display = 'flex';
+    //        co2 = true;
+    //        console.log("Bat")
+    //    } else {
+    //        bosutap.style.display = 'none';
+    //        console.log("Tat")
+    //        co2 = false;
+    //    }
+    //})
+    //navbarmenu3resposive.addEventListener('click', () => {
+    //    if (co3 == false) {
+    //        phukien.style.display = 'flex';
+    //        co3 = true;
+    //    } else {
+    //        phukien.style.display = 'none';
+    //        co3 = false;
+    //    }
+    //})
+    //navbarmenu4resposive.addEventListener('click', () => {
+    //    if (co4 == false) {
+    //        xuhuong.style.display = 'flex';
+    //        co4 = true;
+    //    } else {
+    //        xuhuong.style.display = 'none';
+    //        co4 = false;
+    //    }
+    //})
+
+
+    const scrollContainer = document.getElementById('scrollContainer');
+    const scrollContainer1 = document.getElementById('scrollContainer1');
+    const scrollContainer2 = document.getElementById('scrollContainer2');
+    const scrollContainer3 = document.getElementById('scrollContainer3');
+    const scrollContainer4 = document.getElementById('scrollContainer4');
+    const scrollContainer5 = document.getElementById('scrollContainer5');
+    const scrollContainer6 = document.getElementById('scrollContainer6');
+    const scrollContainer7 = document.getElementById('scrollContainer7');
+    const scrollContainer8 = document.getElementById('scrollContainer8');
+    const scrollContainer9 = document.getElementById('scrollContainer9');
+    const scrollContainer10 = document.getElementById('scrollContainer10');
+    const scrollContainer11 = document.getElementById('scrollContainer11');
+    const scrollContainer12 = document.getElementById('scrollContainer12');
+    const product = document.getElementsByClassName('.product-top');
+
+    function keohang(scrollContainern) {
+      let isDragging = false; // Trạng thái kéo riêng cho từng container
+      let startX, scrollLeft;
+
+      // Khi nhấn chuột vào container
+      scrollContainern.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        scrollContainern.classList.add('active');
+        startX = e.pageX - scrollContainern.offsetLeft; // Vị trí chuột ban đầu
+          scrollLeft = scrollContainern.scrollLeft; // Vị trí cuộn ban đầu
+          console.log("chạy nhấn chuột")
+      });
+
+      // Khi thả chuột
+      scrollContainern.addEventListener('mouseup', () => {
+        isDragging = false;
+        scrollContainern.classList.remove('active');
+      });
+
+      // Khi chuột rời khỏi container
+      scrollContainern.addEventListener('mouseleave', () => {
+        isDragging = false;
+        scrollContainern.classList.remove('active');
+      });
+
+      // Khi di chuyển chuột
+      scrollContainern.addEventListener('mousemove', (e) => {
+        if (!isDragging) return; // Nếu không kéo thì không làm gì cả
+        e.preventDefault();
+        const x = e.pageX - scrollContainern.offsetLeft; // Vị trí hiện tại của chuột
+        const walk = (x - startX) * 2; // Tính khoảng cách di chuyển
+          scrollContainern.scrollLeft = scrollLeft - walk; // Cập nhật vị trí cuộn
+          console.log("Di chuyển chuột")
+      });
+    }
+
+    // Gọi hàm cho từng container
+    keohang(scrollContainer);
+    keohang(scrollContainer1);
+    keohang(scrollContainer2);
+    keohang(scrollContainer3);
+    keohang(scrollContainer4);
+    keohang(scrollContainer5);
+    keohang(scrollContainer6);
+    keohang(scrollContainer7);
+    keohang(scrollContainer8);
+    keohang(scrollContainer9);
+    keohang(scrollContainer10);
+    keohang(scrollContainer11);
+    keohang(scrollContainer12);
 });
 
 

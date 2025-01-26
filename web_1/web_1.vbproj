@@ -92,8 +92,127 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="HtmlPage1.html" />
+    <Content Include="Img\3.png" />
+    <Content Include="Img\banner_coll_1_1.jpg" />
+    <Content Include="Img\banner_coll_1_2.jpg" />
+    <Content Include="Img\banner_coll_1_3.jpg" />
+    <Content Include="Img\banner_slide_1_img_1_img.jpg" />
+    <Content Include="Img\banner_slide_1_img_2_img.jpg" />
+    <Content Include="Img\banner_slide_1_img_3_img.jpg" />
+    <Content Include="Img\banner_slide_1_img_4_img.jpg" />
+    <Content Include="Img\banner_slide_2_img_1_img.jpg" />
+    <Content Include="Img\banner_slide_2_img_2_img.jpg" />
+    <Content Include="Img\banner_slide_2_img_3_img.jpg" />
+    <Content Include="Img\banner_slide_2_img_4_img.jpg" />
+    <Content Include="Img\blog-11280w.png" />
+    <Content Include="Img\blog-4.png" />
+    <Content Include="Img\coupon_1_img.png" />
+    <Content Include="Img\coupon_2_img.png" />
+    <Content Include="Img\cus_review_avatar_1.jpg" />
+    <Content Include="Img\facebook.png" />
+    <Content Include="Img\fire-icon.png" />
+    <Content Include="Img\footer_trustbadge.png" />
+    <Content Include="Img\frame-4487-1.jpg" />
+    <Content Include="Img\frame-4487-2.jpg" />
+    <Content Include="Img\frame-4487-2.png" />
+    <Content Include="Img\frame-4487.jpg" />
+    <Content Include="Img\frame-4488-1-e202e9d6-d18d-4f62-9aa0-76f7b8c31073.jpg" />
+    <Content Include="Img\frame-4488-1.jpg" />
+    <Content Include="Img\frame-4488-113be33a-2f84-40d8-818d-edbfd351c67b.jpg" />
+    <Content Include="Img\frame-4488-2.jpg" />
+    <Content Include="Img\frame-4488-b65effa4-13b1-4126-9cc1-5a4c093a2cee.jpg" />
+    <Content Include="Img\frame-4488-deo-bung.png" />
+    <Content Include="Img\frame-4488.jpg" />
+    <Content Include="Img\frame-4489-1-1.jpg" />
+    <Content Include="Img\frame-4489-2-1.jpg" />
+    <Content Include="Img\frame-4489-2.jpg" />
+    <Content Include="Img\frame-4489.jpg" />
+    <Content Include="Img\frame-4489.png" />
+    <Content Include="Img\frame-4491-1-9eecb2af-4216-49b0-aaf7-2bbbe18770cb.jpg" />
+    <Content Include="Img\frame-4491-1.jpg" />
+    <Content Include="Img\frame-4491-2-4aac64a6-506b-4a1e-9b88-d451525544b5.jpg" />
+    <Content Include="Img\frame-4491-2.png" />
+    <Content Include="Img\frame-4491-3.jpg" />
+    <Content Include="Img\frame-4491-4.jpg" />
+    <Content Include="Img\frame-4491-5.jpg" />
+    <Content Include="Img\frame-4491-6.jpg" />
+    <Content Include="Img\frame-4491-7.jpg" />
+    <Content Include="Img\frame-4491-8c5ec28e-0c4b-4aca-87aa-bd9104535410.jpg" />
+    <Content Include="Img\frame-4491-f84f320b-1cc4-4d43-bf0b-3bfb875cf707.jpg" />
+    <Content Include="Img\frame-4491.png" />
+    <Content Include="Img\frame-4493-1.jpg" />
+    <Content Include="Img\frame-4493.jpg" />
+    <Content Include="Img\frame-4744-2.png" />
+    <Content Include="Img\frame_2.png" />
+    <Content Include="Img\icon-button-play.png" />
+    <Content Include="Img\image-94-97df2fddb3dd46c9ae989d7593ded2c0.jpg" />
+    <Content Include="Img\image-95-2f6e9fb44bbf48eb8becfd491475dac4.jpg" />
+    <Content Include="Img\image-97-730d50f374bc4cd687ca8a57ff56d6a7.jpg" />
+    <Content Include="Img\imgtext_2_img.jpg" />
+    <Content Include="Img\instagram.png" />
+    <Content Include="Img\insta_1_img.jpg" />
+    <Content Include="Img\insta_2_img.jpg" />
+    <Content Include="Img\insta_3_img.jpg" />
+    <Content Include="Img\insta_4_img.jpg" />
+    <Content Include="Img\insta_5_img.jpg" />
+    <Content Include="Img\kh-percentage-c4-percentage-83n-t-percentage-e1-percentage-ba-percentage-adp-fitness-b-percentage-e1-percentage-ba-percentage-b1ng-cotton-90x50-cm-percentage-c4-percentage-91en-domyos-8379823.jpg" />
+    <Content Include="Img\logo-footer.png" />
+    <Content Include="Img\logo.png" />
+    <Content Include="Img\lookbook_1_image.jpg" />
+    <Content Include="Img\lookbook_2_image.jpg" />
+    <Content Include="Img\lookbook_3_image.jpg" />
+    <Content Include="Img\lookbook_oneproduct_img.jpg" />
+    <Content Include="Img\outdated.png" />
+    <Content Include="Img\policies_icon_1.png" />
+    <Content Include="Img\policies_icon_2.png" />
+    <Content Include="Img\policies_icon_3.png" />
+    <Content Include="Img\policies_icon_4.png" />
+    <Content Include="Img\promo_tag_2.png" />
+    <Content Include="Img\season_coll_1_img.png" />
+    <Content Include="Img\season_coll_2_img.png" />
+    <Content Include="Img\season_coll_3_img.png" />
+    <Content Include="Img\season_coll_4_img.png" />
+    <Content Include="Img\season_coll_5_img.png" />
+    <Content Include="Img\season_coll_6_img.png" />
+    <Content Include="Img\section_video_bg.jpg" />
+    <Content Include="Img\slider_1.png" />
+    <Content Include="Img\slider_2.png" />
+    <Content Include="Img\slide_product_2_img_1_img.jpg" />
+    <Content Include="Img\slide_product_2_img_2_img.jpg" />
+    <Content Include="Img\slide_product_3_img_1_img.jpg" />
+    <Content Include="Img\slide_product_3_img_2_img.jpg" />
+    <Content Include="Img\slide_product_4_img_1_img.jpg" />
+    <Content Include="Img\tiktok.png" />
+    <Content Include="Img\tiktok_slide_video_1_img.jpg" />
+    <Content Include="Img\tiktok_slide_video_2_img.jpg" />
+    <Content Include="Img\tiktok_slide_video_3_img.jpg" />
+    <Content Include="Img\tiktok_slide_video_4_img.jpg" />
+    <Content Include="Img\youtube.png" />
+    <Content Include="Img\zalo.png" />
     <Content Include="JavaScript.js" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="StyleSheet1.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -127,6 +246,22 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -137,6 +272,12 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="packages.config" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -144,6 +285,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
