@@ -11,8 +11,8 @@
         console.log(hours, minutes, seconds)
     }
 
-    setInterval(updateClock, 1000);
-        updateClock();
+    //setInterval(updateClock, 1000);
+    //updateClock();
 
     const contents = document.querySelectorAll('.imgactivelife');
     const button2 = document.querySelector('.imgactivelife1Button');
@@ -201,64 +201,69 @@
     // Gọi hàm cập nhật hiển thị lần đầu
     updateVisibility3();
     
-    //const openmenu = document.querySelector('.open_menu');
-    //const navbarmenuresponsive = document.querySelector('.nav-bar-menu_responsive');
-    //const navbarmenu = document.querySelector('.navbarmenu_responsive');
-    //const bosutap = document.querySelector('.bosutap_responsive');
-    //const phukien = document.querySelector('.phukien_responsive');
-    //const xuhuong = document.querySelector('.xuhuong_responsive');
-    //const navbarmenu1resposive = document.querySelector('.choxuong1');
-    //const navbarmenu2resposive = document.querySelector('.choxuong2');
-    //const navbarmenu3resposive = document.querySelector('.choxuong3');
-    //const navbarmenu4resposive = document.querySelector('.choxuong4');
-    //let co1 = false, co2 = false, co3 = false, co4 = false;
-    //if (openmenu && navbarmenuresponsive) {
-    //    openmenu.addEventListener('click', () => {
-    //        navbarmenuresponsive.style.display = 'grid';
-    //        console.log("Xin chào Thương");
-    //    });
-    //} else {
-    //    console.error("Không tìm thấy phần tử .open_menu hoặc .nav-bar-menu_responsive");
-    //}
-    //navbarmenu1resposive.addEventListener('click', () => {
-    //    if (co1 == false) {
-    //        navbarmenu.style.display = 'flex';
-    //        co1 = true;
-    //    } else {
-    //        navbarmenu.style.display = 'none';
-    //         co1 = false;
-    //    }
+    const openmenu = document.querySelector('.open_menu');
+    const navbarmenuresponsive = document.querySelector('.nav-bar-menu_responsive');
+    const navbarmenu = document.querySelector('.navbarmenu_responsive');
+    const bosutap = document.querySelector('.bosutap_responsive');
+    const phukien = document.querySelector('.phukien_responsive');
+    const xuhuong = document.querySelector('.xuhuong_responsive');
+    const navbarmenu1resposive = document.querySelector('.choxuong1');
+    const navbarmenu2resposive = document.querySelector('.choxuong2');
+    const navbarmenu3resposive = document.querySelector('.choxuong3');
+    const navbarmenu4resposive = document.querySelector('.choxuong4');
+    const localLogin = document.querySelector('.dangnhapresponsive');
+    let co1 = false, co2 = false, co3 = false, co4 = false;
+    if (openmenu && navbarmenuresponsive) {
+        openmenu.addEventListener('click', () => {
+            navbarmenuresponsive.style.display = 'grid';
+            console.log("Xin chào Thương");
+        });
+    } else {
+        console.error("Không tìm thấy phần tử .open_menu hoặc .nav-bar-menu_responsive");
+    }
+    navbarmenu1resposive.addEventListener('click', () => {
+        if (co1 == false) {
+            navbarmenu.style.display = 'flex';
+            co1 = true;
+        } else {
+            navbarmenu.style.display = 'none';
+             co1 = false;
+        }
         
-    //})
-    //navbarmenu2resposive.addEventListener('click', () => {
-    //    if (co2 == false) {
-    //        bosutap.style.display = 'flex';
-    //        co2 = true;
-    //        console.log("Bat")
-    //    } else {
-    //        bosutap.style.display = 'none';
-    //        console.log("Tat")
-    //        co2 = false;
-    //    }
-    //})
-    //navbarmenu3resposive.addEventListener('click', () => {
-    //    if (co3 == false) {
-    //        phukien.style.display = 'flex';
-    //        co3 = true;
-    //    } else {
-    //        phukien.style.display = 'none';
-    //        co3 = false;
-    //    }
-    //})
-    //navbarmenu4resposive.addEventListener('click', () => {
-    //    if (co4 == false) {
-    //        xuhuong.style.display = 'flex';
-    //        co4 = true;
-    //    } else {
-    //        xuhuong.style.display = 'none';
-    //        co4 = false;
-    //    }
-    //})
+    })
+    navbarmenu2resposive.addEventListener('click', () => {
+        if (co2 == false) {
+            bosutap.style.display = 'flex';
+            co2 = true;
+            console.log("Bat")
+        } else {
+            bosutap.style.display = 'none';
+            console.log("Tat")
+            co2 = false;
+        }
+    })
+    navbarmenu3resposive.addEventListener('click', () => {
+        if (co3 == false) {
+            phukien.style.display = 'flex';
+            co3 = true;
+        } else {
+            phukien.style.display = 'none';
+            co3 = false;
+        }
+    })
+    navbarmenu4resposive.addEventListener('click', () => {
+        if (co4 == false) {
+            xuhuong.style.display = 'flex';
+            co4 = true;
+        } else {
+            xuhuong.style.display = 'none';
+            co4 = false;
+        }
+    })
+
+    localLogin.addEventListener('click', () => {
+        navbarmenuresponsive.style.display = 'none'
+    });
 
 
     const scrollContainer = document.getElementById('scrollContainer');
@@ -276,41 +281,97 @@
     const scrollContainer12 = document.getElementById('scrollContainer12');
     const product = document.getElementsByClassName('.product-top');
 
+    
+    //function keohang(scrollContainern) {
+    //    let isDragging = false; // Trạng thái kéo riêng cho từng container
+    //    let startX, scrollLeft;
+
+    //    // Khi nhấn chuột vào container
+    //    scrollContainern.addEventListener('mousedown', (e) => {
+    //        isDragging = true;
+    //        scrollContainern.classList.add('active');
+    //        startX = e.pageX - scrollContainern.offsetLeft; // Vị trí chuột ban đầu
+    //        scrollLeft = scrollContainern.scrollLeft; // Vị trí cuộn ban đầu
+    //        console.log("Nhấn chuột")
+    //        console.log("Giá trị trong mousedown: " + isDragging)
+    //    });
+
+    //    // Khi thả chuột
+    //    scrollContainern.addEventListener('mouseup', () => {
+    //        isDragging = false;
+    //        scrollContainern.classList.remove('active');
+    //        console.log("Nhả chuột sau khi kéo")
+    //        console.log("Giá trị trong mouseup: " + isDragging)
+    //    });
+
+    //    // Khi chuột rời khỏi container
+    //    scrollContainern.addEventListener('mouseleave', () => {
+    //        isDragging = false;
+    //        scrollContainern.classList.remove('active');
+    //        console.log("Chuột rời khỏi phạm vi")
+    //        console.log("Giá trị trong mouseleave: " + isDragging)
+    //    });
+
+    //    // Khi di chuyển chuột
+    //    scrollContainern.addEventListener('mousemove', (e) => {
+    //        if (!isDragging) return; // Nếu không kéo thì không làm gì cả
+    //        e.preventDefault();
+    //        const x = e.pageX - scrollContainern.offsetLeft; // Vị trí hiện tại của chuột
+    //        const walk = (x - startX) * 2; // Tính khoảng cách di chuyển
+    //        scrollContainern.scrollLeft = scrollLeft - walk; // Cập nhật vị trí cuộn
+    //        console.log("Di chuyển chuột")
+    //        console.log("Giá trị trong mousemove: " + isDragging)
+    //    });
+    //}
+
     function keohang(scrollContainern) {
-      let isDragging = false; // Trạng thái kéo riêng cho từng container
-      let startX, scrollLeft;
+        let isDragging = false;
+        let startX, scrollLeft;
 
-      // Khi nhấn chuột vào container
-      scrollContainern.addEventListener('mousedown', (e) => {
-        isDragging = true;
-        scrollContainern.classList.add('active');
-        startX = e.pageX - scrollContainern.offsetLeft; // Vị trí chuột ban đầu
-          scrollLeft = scrollContainern.scrollLeft; // Vị trí cuộn ban đầu
-          console.log("chạy nhấn chuột")
-      });
+        // Khi nhấn (chuột hoặc cảm ứng)
+        scrollContainern.addEventListener('pointerdown', (e) => {
+            isDragging = true;
+            scrollContainern.classList.add('active');
+            startX = e.pageX - scrollContainern.offsetLeft;
+            scrollLeft = scrollContainern.scrollLeft;
+            console.log("Nhấn chuột hoặc chạm");
+            console.log("Giá trị trong pointerdown: " + isDragging);
+        });
 
-      // Khi thả chuột
-      scrollContainern.addEventListener('mouseup', () => {
-        isDragging = false;
-        scrollContainern.classList.remove('active');
-      });
+        // Khi thả (chuột hoặc ngón tay)
+        scrollContainern.addEventListener('pointerup', () => {
+            isDragging = false;
+            scrollContainern.classList.remove('active');
+            console.log("Nhả chuột hoặc kết thúc chạm");
+            console.log("Giá trị trong pointerup: " + isDragging);
+        });
 
-      // Khi chuột rời khỏi container
-      scrollContainern.addEventListener('mouseleave', () => {
-        isDragging = false;
-        scrollContainern.classList.remove('active');
-      });
+        // Khi rời khỏi container
+        scrollContainern.addEventListener('pointerleave', () => {
+            isDragging = false;
+            scrollContainern.classList.remove('active');
+            console.log("Rời khỏi phạm vi");
+            console.log("Giá trị trong pointerleave: " + isDragging);
+        });
 
-      // Khi di chuyển chuột
-      scrollContainern.addEventListener('mousemove', (e) => {
-        if (!isDragging) return; // Nếu không kéo thì không làm gì cả
-        e.preventDefault();
-        const x = e.pageX - scrollContainern.offsetLeft; // Vị trí hiện tại của chuột
-        const walk = (x - startX) * 2; // Tính khoảng cách di chuyển
-          scrollContainern.scrollLeft = scrollLeft - walk; // Cập nhật vị trí cuộn
-          console.log("Di chuyển chuột")
-      });
+        // Khi di chuyển (chuột hoặc ngón tay)
+        scrollContainern.addEventListener('pointermove', (e) => {
+            if (!isDragging) return;
+            e.preventDefault();
+            const x = e.pageX - scrollContainern.offsetLeft;
+            const walk = (x - startX) * 2;
+            scrollContainern.scrollLeft = scrollLeft - walk;
+            console.log("Di chuyển chuột hoặc ngón tay");
+            console.log("Giá trị trong pointermove: " + isDragging);
+        });
+
+        // Ngăn chặn trình duyệt cuộn khi kéo
+        scrollContainern.addEventListener('touchmove', (e) => {
+            e.preventDefault();
+        }, { passive: false });
     }
+
+
 
     // Gọi hàm cho từng container
     keohang(scrollContainer);
